@@ -1,1 +1,30 @@
- 
+1.0 GENERAL SECURITY CONCEPTS
+
+1.1 COMPARE AND CONTRAST VARIOUS TYPES OF SECURITY CONTROLS
+
+
++Categories
+
+-Technical: 
+
+-Managerial: 
+
+-Operational: 
+
+-Physical: 
+
+
+
++Control types
+
+-Preventive:
+
+-Deterrent:
+
+-Detective:
+
+-Corrective:
+
+-Compensating:
+
+-Directive:
