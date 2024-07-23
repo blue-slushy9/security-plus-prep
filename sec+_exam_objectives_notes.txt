@@ -5,7 +5,10 @@
 
 +Categories
 
--Technical: 
+-Technical: safeguards and countermeasures implemented using technology,
+e.g. access control, encryption, firewalls, IDS/IPS, antivirus, SIEM,
+DLP, network segmentation, logging & auditing, patch management, secure configuration management, vulnerability scanners, backup & recovery, MFA,
+remote access, NAC, security tokens & smart cards, PKI, file integrity monitoring, web content filters, etc.
 
 -Managerial: 
 
