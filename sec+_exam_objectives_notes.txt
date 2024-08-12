@@ -22,12 +22,13 @@ remote access, NAC, security tokens & smart cards, PKI, file integrity monitorin
 
 -Preventive: security measures designed to proactively stop an incident, the first line of defense in an organization's security strategy. Examples: physical, technical, and administrative controls; passwords, IDS, ACLs, encryption, security training.
 
--Deterrent: designed to discourage potential attackers 
+-Deterrent: designed to discourage potential attackers. Examples: warning signs, security guards, advertisement of IDS, cable locks, advertisement of DLP policies, e.g. retaliatory legal action.
 
--Detective:
+-Detective: designed to discover security incidents and unauthorized activity after they have occurred, they help to identify and document security events. Examples: IDS, log monitoring, security audits, vulnerability assessments, continuous monitoring, penetration testing, video surveillance. 
 
--Corrective:
+-Corrective: implemented to fix problems or vulnerabilities after a security incident has occurred. They focus on minimizing the impact of  breach and restoring systems to normal operations. Examples: data restoration, system recovery, patch management, incident response plan, legal action.
 
--Compensating:
+-Compensating: these are alternative security measures implemented when a primary control is not feasible or practical. They maintain an acceptable level of security even when a preferred control cannot be fully implemented. Examples: IDS in lieu of physical security, access controls in lieu of encryption, security training in lieu of technical controls. 
 
--Directive:
+-Directive: these are the security policies, procedures, and guidelines of an organization; they provide the framework for other security controls. They are often documented in written form. Examples: standards, baselines.
+
