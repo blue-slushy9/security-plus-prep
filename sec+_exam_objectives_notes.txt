@@ -12,17 +12,17 @@ remote access, NAC, security tokens & smart cards, PKI, file integrity monitorin
 
 -Managerial: AKA administrative controls; these are policies, procedures, and guidelines that govern how an organization manages and protects its information systems. Their purpose is to secure the organizational environment and ensure compliance with regulations. Examples: password policy, security awareness training, disaster recovery and business continuity plans, security audits and vulnerability assessments, incident response plans.
 
--Operational: 
+-Operational: Day-to-day activities that implement and enforce the managerial controls, they are the tactical level of security management. Examples: user access reviews, incident response procedures, security awareness training.
 
--Physical: 
+-Physical: safeguards that protect people, property, and infrastructure from threats. Examples: locks, keys, biometric authentication, barriers such as fences and gates; fire suppression, HVAC, power protection; lights, fences, security guards, watchdogs; alarms, access control; visitor management, background checks; data protection for tangible media.
 
 
 
 +Control types
 
--Preventive:
+-Preventive: security measures designed to proactively stop an incident, the first line of defense in an organization's security strategy. Examples: physical, technical, and administrative controls; passwords, IDS, ACLs, encryption, security training.
 
--Deterrent:
+-Deterrent: designed to discourage potential attackers 
 
 -Detective:
 
