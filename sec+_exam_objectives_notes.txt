@@ -32,3 +32,201 @@ remote access, NAC, security tokens & smart cards, PKI, file integrity monitorin
 
 -Directive: these are the security policies, procedures, and guidelines of an organization; they provide the framework for other security controls. They are often documented in written form. Examples: standards, baselines.
 
+1.2 SUMMARIZE FUNDAMENTAL SECURITY CONCEPTS
+
++Confidentiality, Integrity, and Availability (CIA)
+
++Non-repudiation
+
++Authentication, Authorization, and Accounting (AAA)
+
+-Authenticating people
+-Authenticating systems
+-Authorization models
+
++Gap analysis
+
++Zero trust
+-Control plane
+~Adaptive identity
+~Threat scope reduction
+~Policy-driven access control
+~Policy administrator
+~Policy engine
+
+-Data plane
+~Implicit trust zones
+~Subject/System
+~Policy enforcement point
+
++Physical security
+-Bollards
+-Access control vestibule
+-Fencing
+-Security guard
+-Access badge
+-Lighting
+-Sensors
+~Infrared
+~Pressure
+~Microwave
+~Ultrasonic
+
++Deception and disruption technology
+-Honeypot
+-Honeynet
+-Honeyfile
+-Honeytoken
+
+1.3 EXPLAIN THE IMPORTANCE OF CHANGE MANAGEMENT PROCESSES AND THE IMPACT TO SECURITY
+
++Business processes impacting security operation
+-Approval process
+-Ownership
+-Stakeholders
+-Impact analysis
+-Test results
+-Backout plan
+-Maintenance window
+-Standard operating procedure
+
++Technical implications
+-Allow lists
+-Deny lists
+-Downtime
+-Service restart
+-Application restart
+-Legacy applications
+-Dependencies
+
++Documentation
+-Updating diagrams
+-Updates policies/procedures
+
++Version control
+
+1.4 EXPLAIN THE IMPORTANCE OF USING APPROPRIATE CRYPTOGRAPHIC SOLUTIONS
+
++Public key infrastructure (PKI)
+-Public key
+-Private key
+-Key escrow
+
++Encryption
+-Level
+~Full disk
+~Partition
+~File
+~Volume
+~Database
+~Record
+
+-Transport/communication
+-Asymmetric
+-Symmetric
+-Key exchange
+-Algorithms
+-Key length
+
++Tools
+-Trusted Platform Module (TPM)
+-Hardware security module (HSM)
+-Key management system
+-Secure enclave
+
++Obfuscation
+-Steganography
+-Tokenization
+-Data masking
+
++Hashing
++Salting
++Digital signatures
++Key stretching
++Blockchain
++Open public ledger
+
++Certificates
+-Certificate authorities (CAs)
+-Certificate revocation lists (CRLs)
+-Online Certificate Status Protocol (OCSP)
+-Self-signed
+-Third-party
+-Root of trust
+-Certificate signing request (CSR) generation
+-Wildcard
+
+2.0 THREATS, VULNERABILITIES, AND MITIGATION
+
+2.1 COMPARE AND CONTRAST COMMON THREAT ACTORS AND MOTIVATIONS
+
++Threat actors
+-Nation-state
+-Unskilled attacker
+-Hacktivist
+-Insider threat
+-Organized crime
+-Shadow IT
+
++Attributes of actors
+-Internal/external
+-Resources/funding
+-Level of sophistication/capability
+
++Motivations
+-Data exfiltration
+-Espionage
+-Service disruption
+-Blackmail
+-Financial gain
+-Philosophical/political beliefs
+-Ethical
+-Revenge
+-Disruption/chaos
+-War
+
+2.2 EXPLAIN COMMON THREAT VECTORS AND ATTACK SURFACES
+
++Message-based
+-Email
+-Short Message Service (SMS)
+-Instant messaging (IM)
+
++Image-based
+
++File-based
+
++Voice call
+
++Removable device
+
++Vulnerable software
+-Client-based vs. agentless
+
++Unsupported systems and applications
+
++Unsecure networks
+-Wireless
+-Wired
+-Bluetooth
+
++Open service ports
+
++Default credentials
+
++Supply chain
+-Managed service providers (MSPs)
+-Vendors
+-Suppliers
+
++Human vectors/social engineering
+-Phishing
+-Vishing
+-Smishing
+-Misinformation/Disinformation
+-Impersonation
+-Business email compromise
+-Pretexting
+-Watering hole
+-Brand impersonation
+-Typosquatting
