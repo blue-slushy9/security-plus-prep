@@ -10,7 +10,7 @@ e.g. access control, encryption, firewalls, IDS/IPS, antivirus, SIEM,
 DLP, network segmentation, logging & auditing, patch management, secure configuration management, vulnerability scanners, backup & recovery, MFA,
 remote access, NAC, security tokens & smart cards, PKI, file integrity monitoring, web content filters, etc.
 
--Managerial: 
+-Managerial: AKA administrative controls; these are policies, procedures, and guidelines that govern how an organization manages and protects its information systems. Their purpose is to secure the organizational environment and ensure compliance with regulations. Examples: password policy, security awareness training, disaster recovery and business continuity plans, security audits and vulnerability assessments, incident response plans.
 
 -Operational: 
 
