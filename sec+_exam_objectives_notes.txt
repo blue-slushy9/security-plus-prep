@@ -36,28 +36,38 @@ remote access, NAC, security tokens & smart cards, PKI, file integrity monitorin
 
 +Confidentiality, Integrity, and Availability (CIA)
 
-+Non-repudiation
++Non-repudiation: the state of a system or resource to be tracked and monitored in such a way that any changes to it cannot be concealed or denied by the responsible party.
 
 +Authentication, Authorization, and Accounting (AAA)
 
 -Authenticating people
 -Authenticating systems
--Authorization models
 
-+Gap analysis
+-Authorization models: frameworks for controlling access to resources. Examples: Mandatory access control (MAC), Discretionary access control (DAC), Role-Based access control (RBAC), Rule-Based access control, Attribute-based access control (ABAC), Time-based access control, Least privilege, Separation of duties.
 
-+Zero trust
--Control plane
-~Adaptive identity
-~Threat scope reduction
-~Policy-driven access control
-~Policy administrator
-~Policy engine
++Gap analysis: a method of assessing the difference between an organization's current security posture and its desired or required security state. 
 
--Data plane
-~Implicit trust zones
-~Subject/System
-~Policy enforcement point
++Zero trust: the security principle, "never trust, always verify." In other words, no user, device, or network should ever be automatically trusted.
+
+-Control plane: framework that represents the decision-making and policy-enforcing components within a network or security system. It is responsible for determining how data should be processed, forwarded, or blocked based on defined security policies.
+
+~Adaptive identity: dynamic approach to authentication that adjusts the level of security based on various factors, e.g. user behavior, location, device, and time. It is a more sophisticated form of MFA. 
+
+~Threat scope reduction: principle aimed at minimizing the potential impact of a successful cyberattack. It involves limiting user access to only the systems and data necessary for their job functions. It also includes other safeguards, e.g. network segmentation, data classification, in order to ensure damage control in the case of a breach.
+
+~Policy-driven access control: access control based on organizational policy, e.g. least privilege.
+
+~Policy administrator: the member(s) of the organization who are responsible for administering and overseeing policy implementation.
+
+~Policy engine: software component responsible for enforcing security policies within a system or network, the core of PBAC. Functions: policy evaluation, access decision, real-time enforcement, auditing and logging.
+
+-Data plane: operational component of a network or security device that handles the actual processing and forwarding of network data. Examples: packet forwarding, data processing, traffic management, security enforcement.
+
+~Implicit trust zones: a collection of resources that are granted a certain level of trust based on their function and/or location in the network. As a component of the Zero Trust Architecture (ZTA) framework, operates on the principle that no user or device should be implicitly or automatically trusted. Also includes network segmentation, limited access, dynamic trust, etc.
+
+~Subject/System: an individual, device, or larger system; basically units that can be assessed for their threat/security level or status. 
+
+~Policy enforcement point: 
 
 +Physical security
 -Bollards
