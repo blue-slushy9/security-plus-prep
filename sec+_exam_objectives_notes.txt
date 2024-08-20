@@ -65,22 +65,26 @@ remote access, NAC, security tokens & smart cards, PKI, file integrity monitorin
 
 ~Implicit trust zones: a collection of resources that are granted a certain level of trust based on their function and/or location in the network. As a component of the Zero Trust Architecture (ZTA) framework, operates on the principle that no user or device should be implicitly or automatically trusted. Also includes network segmentation, limited access, dynamic trust, etc.
 
-~Subject/System: an individual, device, or larger system; basically units that can be assessed for their threat/security level or status. 
+~Subject/System: an individual, device, or larger system; basically units that can be assessed for their threat/security level or status. They initiate actions or requests, such as to resources or objects. Processes and applications can also be subjects.
 
-~Policy enforcement point: 
+~Policy enforcement point (PEP): security component or mechanism that enforces access control policies at the point where access requests are made, e.g. firewalls, proxy servers, ACLs.
 
 +Physical security
--Bollards
+
+-Bollards: sturdy, short, vertical posts made of steel, 
+concrete, or some other durable material. They are primarily used to guard against motor vehicles.
+
 -Access control vestibule
 -Fencing
 -Security guard
 -Access badge
 -Lighting
--Sensors
-~Infrared
-~Pressure
-~Microwave
-~Ultrasonic
+
+-Sensors: 
+~Infrared:
+~Pressure:
+~Microwave:
+~Ultrasonic:
 
 +Deception and disruption technology
 -Honeypot
