@@ -81,16 +81,25 @@ concrete, or some other durable material. They are primarily used to guard again
 -Lighting
 
 -Sensors: 
-~Infrared:
-~Pressure:
-~Microwave:
-~Ultrasonic:
 
-+Deception and disruption technology
--Honeypot
--Honeynet
--Honeyfile
--Honeytoken
+~Infrared: electronic devices that detect infrared radiation, typically in the form of heat emitted by objects or living beings.
+
+~Pressure: detect changes in pressure or weight on a usrface or within a protected area, e.g. people, objects, vehicles. Examples: mat sensors, plate sensors, strain gauges.
+
+~Microwave: emit and detect microwave electromagnetic radiation to sense movement or presence within a defined area. The movement or presence of a foreign object is detected by interpreting the reflected signals.
+
+~Ultrasonic: emit and detect high-frequency sound waves, typically above the range of human hearing, to sense the movement or presence of objects in a defined area. The movement or presence of a foreign object is detected by interpreting the reflected signals.
+
++Deception and disruption technology: security controls and techniques designed to mislead, confuse, or disrupt the activities of potential attackers. Examples: honeypots, honeytokens, misinformation, fake data, deceptive network traffic, obfuscation.
+
+-Honeypot: a host, usually a webserver, that is deliberately exposed to the internet in a vulnerable or semi-vulnerable state in order to collect data on would-be attackers.
+
+-Honeynet: a network of honeypots designed to attract and monitor the activities of potential attackers. Each component honeypot is designed to mimic a different type of system or service. 
+
+-Honeyfile: fake or decoy file designed to attract and lure potential attackers, allowing security teams to detect, monitor, and study their activities.
+
+-Honeytoken: 
+
 
 1.3 EXPLAIN THE IMPORTANCE OF CHANGE MANAGEMENT PROCESSES AND THE IMPACT TO SECURITY
 
