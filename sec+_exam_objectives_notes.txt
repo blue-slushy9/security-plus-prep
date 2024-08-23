@@ -98,20 +98,28 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Honeyfile: fake or decoy file designed to attract and lure potential attackers, allowing security teams to detect, monitor, and study their activities.
 
--Honeytoken: 
+-Honeytoken: digital entity or piece of information designed to attract and detect unauthorized access or use. They might be scattered throughout systems and databases, and monitored for attempted use. Examples: fake user credentials, bogus database entries, fake API keys. 
 
 
 1.3 EXPLAIN THE IMPORTANCE OF CHANGE MANAGEMENT PROCESSES AND THE IMPACT TO SECURITY
 
 +Business processes impacting security operation
--Approval process
--Ownership
--Stakeholders
--Impact analysis
--Test results
--Backout plan
--Maintenance window
--Standard operating procedure
+
+-Approval process: the formal procedures and steps an organization follows evaluate, authorize, and implement security-related changes, projects, or initiatives. 
+
+-Ownership: the responsibility and authority associated with a particular asset or resource. Examples: ownership of data, systems, assets. 
+
+-Stakeholders: individuals or entities that have an interest in the security of an organization's information systems, can be internal or external. Examples: management, employees, customers, partners, regulators, shareholders. 
+
+-Impact analysis: the process of assessing the potential consequences of a security breach or incident, this helps organizations prioritize risks and allocate resources. 
+
+-Test results:
+
+-Backout plan:
+
+-Maintenance window:
+
+-Standard operating procedure:
 
 +Technical implications
 -Allow lists
