@@ -156,16 +156,22 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Private key: the key that only the recipient of the aforementioned data has access to, used to decrypt any data sent to them that has been encrypted with their public key.
 
--Key escrow: 
+-Key escrow: a security practice in which a third party holds a copy of the cryptographic key, allowing them to decrypt data under certain circumstances; often for compliance reasons or to provide a means of recovering data in case of key loss. The escrow agent can only release the key if certain conditions are met, e.g. court order or emergency.
 
 +Encryption
--Level
-~Full disk
-~Partition
-~File
-~Volume
-~Database
-~Record
+-Level: different levels of encryption are possible based on the data that is on the disk and the levels of access needed to it.
+
+~Full disk: the entire disk is encrypted.
+
+~Partition: a partition is a *physical* division in a disk. If a partition(s) on the disk is encrypted, the other partitions can still be accessed without the decryption key, but not this one.
+
+~File: 
+
+~Volume: similar to a partition, except that it is a *logical* division of the disk instead of a physical one. A volume can be created on a single partition or multiple. A single partition can be used to create multiple volumes.
+
+~Database: can take the form of field-level, row-level, column-level, or even full-disk encryption. 
+
+~Record:
 
 -Transport/communication
 -Asymmetric
