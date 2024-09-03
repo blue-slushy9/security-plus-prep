@@ -113,35 +113,50 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Impact analysis: the process of assessing the potential consequences of a security breach or incident, this helps organizations prioritize risks and allocate resources. 
 
--Test results:
+-Test results: outcomes of security assessments and tests conducted within an organization. Examples: vulnerability assessments, penetration test outcomes, security audit reports, incident response reports.
 
--Backout plan:
+-Backout plan: contingency plan designed to reverse the effects of a change or update to a system if it causes problems or vulnerabilities. Key components: identification of critical changes, documentation of procedures, testing and validation, communication plan.
 
--Maintenance window:
+-Maintenance window: a span of time, usually overnight, during which maintenance on machines is carried out. Example: the maintenance window for an organization's webservers may be from midnight to 5am every night; alternatively, it may be one night a week.
 
--Standard operating procedure:
+-Standard operating procedure: the standard set of steps by which a given task is carried out. Example: the SOP for user onboarding may be to run a shell script.
+
 
 +Technical implications
--Allow lists
--Deny lists
--Downtime
--Service restart
--Application restart
--Legacy applications
--Dependencies
+
+-Allow lists: aka whitelists, these are lists of users, groups, services, etc. that are allowed access to a particular resource.
+
+-Deny lists: aka blacklists, these are lists of users, groups, services, etc. that are not allowed access to a particular resource.
+
+-Downtime: the amount of time for which a machine, service, etc. is not available to serve requests or otherwise carry out its normal function.
+
+-Service restart: can enhance the security of a service in that some patches may requires a service reboot to install. Oftentimes, rebooting a service also enhances its overall performance if it has been running for a while; as it ensures all of the underlying code and sub-services are running properly.
+
+-Application restart: same as above, really.
+
+-Legacy applications: applications from many years ago that are no longer supported by the software distributor. These are very sensitive because, since they're no longer receiving security patches, they are extremely vulnerable to attackers. If an organization absolutely must use legacy software, it should most definitely not be connected to the internet; it should also be run in its own secure subnet in the organization's network.
+
+-Dependencies: these are software components required to run other software. Certain types of software can have a very high number of dependencies, which can be a security risk depending on the repos that are configured on the system. As long as the dependencies and repo(s) are secure (i.e. the dependencies are still supported and the repos are reputable), then installing them should not pose a higher-than-average security risk.
+
 
 +Documentation
--Updating diagrams
--Updates policies/procedures
 
-+Version control
+-Updating diagrams: 
+
+-Updates policies/procedures: 
+
+
++Version control: software that allows you to track changes made to files, usually program files used by developers. Version control allows you to keep track of changes made to these files and roll back as needed. Example: Git.
 
 1.4 EXPLAIN THE IMPORTANCE OF USING APPROPRIATE CRYPTOGRAPHIC SOLUTIONS
 
 +Public key infrastructure (PKI)
--Public key
--Private key
--Key escrow
+
+-Public key: the key that the entire world has access to, used to encrypt any data sent to the recipient.
+
+-Private key: the key that only the recipient of the aforementioned data has access to, used to decrypt any data sent to them that has been encrypted with their public key.
+
+-Key escrow: 
 
 +Encryption
 -Level
