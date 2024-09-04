@@ -141,9 +141,9 @@ concrete, or some other durable material. They are primarily used to guard again
 
 +Documentation
 
--Updating diagrams: 
+-Updating diagrams: these should be updated every time there is a change to the network, be that physical or logical.
 
--Updates policies/procedures: 
+-Updates policies/procedures: these should be updated over time, since the threat landscape is ever in a state of flux. They should also be updated in the event of a breach, in order to improve security in the future. They should also be updated based on the results of pentests, security audits, etc.
 
 
 +Version control: software that allows you to track changes made to files, usually program files used by developers. Version control allows you to keep track of changes made to these files and roll back as needed. Example: Git.
@@ -165,31 +165,43 @@ concrete, or some other durable material. They are primarily used to guard again
 
 ~Partition: a partition is a *physical* division in a disk. If a partition(s) on the disk is encrypted, the other partitions can still be accessed without the decryption key, but not this one.
 
-~File: 
+~File: this type of encryption can be useful if the storage device or system is compromised, because even if the attackers gains access to the underlying system, they will still not be able to access the file data. Alternatively, you can apply multiple levels of encryption: at the level of full disk as well as the file.
 
 ~Volume: similar to a partition, except that it is a *logical* division of the disk instead of a physical one. A volume can be created on a single partition or multiple. A single partition can be used to create multiple volumes.
 
 ~Database: can take the form of field-level, row-level, column-level, or even full-disk encryption. 
 
-~Record:
+~Record: this refers to individual records in a database. This means that each row or entry in a database table is encrypted. Since encryption is applied at the individual record level, this provides granular control. This way, if the database is compromised, not all of its records will be accessible to the attacker. 
 
--Transport/communication
--Asymmetric
--Symmetric
--Key exchange
--Algorithms
--Key length
+-Transport/communication: the process of encrypting data while it is being transmitted over a network. Protocols and tools: TLS, IPsec (this is more of a suite of protocols), VPNs. 
+
+-Asymmetric: one key is used to encrypt, a different one is used to decrypt. The most common example is PKI, which uses a public key for encryption and a private key for decryption.
+
+-Symmetric: same key is used to encrypt and decrypt the data, this is generally highly insecure in today's threat landscape.
+
+-Key exchange: a highly sensitive process as interception of any private keys can lead to data compromise. If symmetric encryption is being used, it is essential that the channel over which the key is exchanged be absolutely secure. For asymmetric key exchange, the communication channel doesn't need to be secure since the public key is freely shared anyway.
+
+-Algorithms: a set of steps for accomplishing a given task. Encryption algorithms are based on mathematics, and are used to transform the data into an unintelligible format which can only be reversed using a decryption key.
+
+-Key length: generally, longer keys are more secure as an attacker would have to get all characters correct in order to gain access. Modern processors are powerful enough to fairly easily crack a 10-20 character key, whereas a key of 50+ characters would take far longer. Using bits as the metric, 128 is fairly secure; 256 is highly secure; and 512 is extremely secure but may impact performance.
 
 +Tools
--Trusted Platform Module (TPM)
--Hardware security module (HSM)
--Key management system
--Secure enclave
+
+-Trusted Platform Module (TPM): a hardware-based security chip embedded on a motherboard, provides cryptographic functions and secure storage for sensitive data. 
+
+-Hardware security module (HSM):
+
+-Key management system:
+
+-Secure enclave:
 
 +Obfuscation
--Steganography
--Tokenization
--Data masking
+
+-Steganography:
+
+-Tokenization:
+
+-Data masking:
 
 +Hashing
 +Salting
