@@ -187,9 +187,22 @@ concrete, or some other durable material. They are primarily used to guard again
 
 +Tools
 
--Trusted Platform Module (TPM): a hardware-based security chip embedded on a motherboard, provides cryptographic functions and secure storage for sensitive data. 
+-Trusted Platform Module (TPM): a hardware-based security chip embedded on a motherboard, provides cryptographic functions and secure storage for sensitive data.
 
--Hardware security module (HSM):
+~Key functions:
+
+=Secure Boot: verifies integrity of the boot process to prevent malware from loading before the OS.
+
+=Hardware-based key generation: generates and stores cryptographic keys securely on the chip. Hardware-based cryptographic operations are more secure than their software-based counterparts.
+
+=Data encryption: encrypts sensitive data like passwords and encryption keys.
+
+=Measured Boot: records the sequence of boot components to detect tampering.
+
+=Attestation: provides evidence of a system's hardware and software configuration. 
+
+
+-Hardware security module (HSM): 
 
 -Key management system:
 
