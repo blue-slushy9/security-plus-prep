@@ -202,13 +202,14 @@ concrete, or some other durable material. They are primarily used to guard again
 =Attestation: provides evidence of a system's hardware and software configuration. 
 
 
--Hardware security module (HSM): 
+-Hardware security module (HSM): specialized piece of hardware designed to protect cryptographic keys and perform cryptographic operations securely; it is a dedicated device. Functions: generates and stores keys; performs cryptographic functions, e.g. digital signing, hashing; protects cryptographic operations from software-based attacks.
 
--Key management system:
+-Key management system: critical component of security infrastructure responsible for managing cryptographic keys; ensures the secure generation, storage, distribution, and revocation of keys. KMSes can be hardware- or software-based, e.g. HSMs, TPMs, Keycloak.
 
--Secure enclave:
+-Secure enclave: hardware-based security module found in some modern processors (e.g. Apple A-series and Intel SGX); it provides a secure and isolated environment for sensitive operations like key storage, cryptographic computations, and authentication. Use cases: secure boot, hardware-based encryption, mobile payments, IoT security.
 
-+Obfuscation
+
++Obfuscation: 
 
 -Steganography:
 
@@ -216,22 +217,35 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Data masking:
 
-+Hashing
-+Salting
-+Digital signatures
-+Key stretching
-+Blockchain
-+Open public ledger
++Hashing:
+
++Salting:
+
++Digital signatures:
+
++Key stretching:
+
++Blockchain:
+
++Open public ledger:
 
 +Certificates
--Certificate authorities (CAs)
--Certificate revocation lists (CRLs)
--Online Certificate Status Protocol (OCSP)
--Self-signed
--Third-party
--Root of trust
--Certificate signing request (CSR) generation
--Wildcard
+-Certificate authorities (CAs):
+
+-Certificate revocation lists (CRLs):
+
+-Online Certificate Status Protocol (OCSP):
+
+-Self-signed:
+
+-Third-party:
+
+-Root of trust:
+
+-Certificate signing request (CSR) generation:
+
+-Wildcard:
+
 
 2.0 THREATS, VULNERABILITIES, AND MITIGATION
 
