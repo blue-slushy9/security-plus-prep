@@ -209,11 +209,11 @@ concrete, or some other durable material. They are primarily used to guard again
 -Secure enclave: hardware-based security module found in some modern processors (e.g. Apple A-series and Intel SGX); it provides a secure and isolated environment for sensitive operations like key storage, cryptographic computations, and authentication. Use cases: secure boot, hardware-based encryption, mobile payments, IoT security.
 
 
-+Obfuscation: 
++Obfuscation: process of making data or code difficult to understand or analyze to make it harder for attackers to reverse-engineer or exploit. Techniques: renaming variables, rearranging code structure, adding noise; encryption, substitution, transposition; disguising network traffic.
 
--Steganography:
+-Steganography: technique used to hide data within other data, making it difficult to detect that the hidden information exists. The carrier is the overt data, the payload is the hidden data. Steganalysis is the process of extracting the payload from the carrier. Subtypes: text, image, audio, video. 
 
--Tokenization:
+-Tokenization: process of replacing sensitive data (e.g. credit card numbers, personal identifiers) with a unique code or token; the token is then used in place of the original data for subsequent transactions or interactions.
 
 -Data masking:
 
