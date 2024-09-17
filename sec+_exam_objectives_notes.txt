@@ -213,19 +213,21 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Steganography: technique used to hide data within other data, making it difficult to detect that the hidden information exists. The carrier is the overt data, the payload is the hidden data. Steganalysis is the process of extracting the payload from the carrier. Subtypes: text, image, audio, video. 
 
--Tokenization: process of replacing sensitive data (e.g. credit card numbers, personal identifiers) with a unique code or token; the token is then used in place of the original data for subsequent transactions or interactions.
+-Tokenization: process of replacing sensitive data (e.g. credit card numbers, personal identifiers) with a unique code or token; the token is then used in place of the original data for subsequent transactions or interactions. When needed, the token can be used to retrieve the original data as the two become associated in storage. 
 
--Data masking:
+-Data masking: used to protect sensitive data by concealing or replacing it with non-sensitive information. This is often done to prevent unauthorized access or misuse of data, especially during development, testing, or backup activities. Example: masking credit card numbers with Xs or random digits.
 
-+Hashing:
++Hashing: unlike encryption algorithms, hashing algorithms are designed to be irreversible. This makes it even more secure than encryption, in that even if an attacker were to gain access to a hash, they would still not be able to unscramble the data.
 
-+Salting:
++Salting: technique used to enhance the security of password hashing. A random value, known as a salt, is added to the password before hashing it. The salt is then stored alongside the hashed password. Salting is used to prevent rainbow table attacks (see below).
 
-+Digital signatures:
++Rainbow table: precomputed table used to reverse cryptographic hash functions, used for cracking passwords more quickly. This is because passwords are almost always stored as hashes, so rainbow tables make it easier to map common passwords to their corresponding hashes.
 
-+Key stretching:
++Digital signatures: cryptographic techniques used to verify the authenticity and integrity of digital data. They provide a way to ensure that a message or file has not been tampered with and originated from the trusted sender. Process: the sender creates a digital signature using a private key, which is then attached to the message. The recipient can verify the signature using the sender's public key. ?????? # Not sure Gemini is correct about this one
 
-+Blockchain:
++Key stretching: technique used to increase the computational effort required to derive a cryptographic key from a password or passphrase. This makes it more difficult for attackers to brute-force or dictionary-attack passwords, even if they have the password hash. Process: a password or passphrase is repeatedly hashed using a strong hashing algorithm with a high iteration count. This increases the time and resources required to derive the key. Key stretching is commonly used password storage systems, especially in long-term storage of sensitive information. Key-stretching algorithms: PBKDF2, bcrypt, scrypt.
+
++Blockchain: 
 
 +Open public ledger:
 
