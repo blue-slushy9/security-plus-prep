@@ -227,18 +227,19 @@ concrete, or some other durable material. They are primarily used to guard again
 
 +Key stretching: technique used to increase the computational effort required to derive a cryptographic key from a password or passphrase. This makes it more difficult for attackers to brute-force or dictionary-attack passwords, even if they have the password hash. Process: a password or passphrase is repeatedly hashed using a strong hashing algorithm with a high iteration count. This increases the time and resources required to derive the key. Key stretching is commonly used password storage systems, especially in long-term storage of sensitive information. Key-stretching algorithms: PBKDF2, bcrypt, scrypt.
 
-+Blockchain: 
++Blockchain: decentralized, distributed ledger technology that records transactions in a secure and transparent manner. Blockchain networks are distributed across multiple computers, making them resistant to censorship and single points of failure. Once a transaction is recorded on a blockchain, it is difficult or impossible to alter or delete, ensuring data integrity. All transactions on a blockchain are publicly visible, providing transparency and accountability. Blockchain networks use consensus mechanisms to validate transactions and maintain the integrity of the ledger. Blockchain technology offers strong security features, including cryptographic hashing and digital signatures. 
 
-+Open public ledger:
++Open public ledger: distributed database that is accessible to anyone with an internet connection. It records transactions and data in a transparent and immutable manner. Examples: blockchain, public blockchain.
 
 +Certificates
--Certificate authorities (CAs):
 
--Certificate revocation lists (CRLs):
+-Certificate authorities (CAs): trusted third-party entity that issues digital certificates, which are used to verify the identity of individuals, organizations, or devices. CAs are a fundamental component of PKI, because CAs are the trusted third party that issues the certificates that bind public keys to specific entities. 
 
--Online Certificate Status Protocol (OCSP):
+-Certificate revocation lists (CRLs): lists of digital certificates that have been revoked by a CA. CRLs are used to inform users and systems that a certificate is no longer valid. CRLs are typically distributed through a network protocol called Certificate Status Protocol (CSP). Users and systems can check CRLs to verify the validity of a certificate before using it. The effectiveness of CRLs depends on how quickly they are updated and distributed.
 
--Self-signed:
+-Online Certificate Status Protocol (OCSP): a more efficient method for checking certificate status in real-time. 
+
+-Self-signed: 
 
 -Third-party:
 
