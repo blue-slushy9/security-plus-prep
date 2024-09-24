@@ -237,17 +237,21 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Certificate revocation lists (CRLs): lists of digital certificates that have been revoked by a CA. CRLs are used to inform users and systems that a certificate is no longer valid. CRLs are typically distributed through a network protocol called Certificate Status Protocol (CSP). Users and systems can check CRLs to verify the validity of a certificate before using it. The effectiveness of CRLs depends on how quickly they are updated and distributed.
 
--Online Certificate Status Protocol (OCSP): a more efficient method for checking certificate status in real-time. 
+-Online Certificate Status Protocol (OCSP): a more efficient method for checking certificate status in real-time. When a system needs to verify the validity of a certificate, it sends a query to an OCSP responder. The responder checks its database to see if the certificate has been revoked. It then sends a response to the querying system: Good, Revoked, or Unknown.
 
--Self-signed: 
+-Self-signed: a certificate that has been created, signed, and verified by the same party to which it belongs. Generally not very trustworthy, for obvious reasons. There is no external CA involved in this process. They are often used in development or testing environments, also in internal networks. 
 
--Third-party:
+-Third-party: a certificate that has been created, signed, and verified by a different party than that to which it belongs; typically a CA.
 
--Root of trust:
+-Root of trust certificate: digital certificate that serves as the foundation for trust in a cryptographic system. It is the highest level of authority in a public key infrastructure (PKI) hierarchy. They are typically self-signed, comes pre-installed on devices or OSes, and are trusted by systems by default in order to verify other certificates in the chain. 
 
--Certificate signing request (CSR) generation:
+~Process: when a system needs to verify the authenticity of an intermediate certificate, it checks the signature against the public key of the RoT certificate. Intermediate certificates can then verify the authenticity of end-entity certificates (e.g. website certificates).
+
+-Certificate signing request (CSR) generation: process of creating a CSR, which is a text file that contains information about an entity (e.g. website, server, individual) requesting a digital certificate. This information is used by a CA to verify the entity's identity and issue a corresponding certificate. 
 
 -Wildcard:
+
+-Root of trust: RoT, refers to the foundation upon which trust in a system is built. It is the trusted source that verifies the authenticity of other components within the system. Examples: BIOS/UEFI, TPM, secure boot keys.
 
 
 2.0 THREATS, VULNERABILITIES, AND MITIGATION
