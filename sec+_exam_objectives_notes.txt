@@ -249,7 +249,7 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Certificate signing request (CSR) generation: process of creating a CSR, which is a text file that contains information about an entity (e.g. website, server, individual) requesting a digital certificate. This information is used by a CA to verify the entity's identity and issue a corresponding certificate. 
 
--Wildcard:
+-Wildcard: a type of digital certificate that can be used to secure multiple domains within a single domain namespace. It is characterized by the use of an asterisk as a placeholder for any subdomain. Wildcard certificates are cost-effective and dynamic, but can expose multiple domains if there is a vulnerability. Examples: *.example.com would secure all subdomains of example.com, such as shop.example.com or www.example.com.
 
 -Root of trust: RoT, refers to the foundation upon which trust in a system is built. It is the trusted source that verifies the authenticity of other components within the system. Examples: BIOS/UEFI, TPM, secure boot keys.
 
@@ -259,12 +259,18 @@ concrete, or some other durable material. They are primarily used to guard again
 2.1 COMPARE AND CONTRAST COMMON THREAT ACTORS AND MOTIVATIONS
 
 +Threat actors
--Nation-state
--Unskilled attacker
--Hacktivist
--Insider threat
--Organized crime
--Shadow IT
+
+-Nation-state: governments of countries, or a subdivision thereof, that seek to carry out cyberattacks on enemy countries. US examples: Russia, North Korea, China.
+
+-Unskilled attacker: aka "script kiddy", an attacker who knows very little about IT and/or computer science as is most commonly using tools developed by skilled attackers. May be acting as a pawn of a skilled or unskilled group, or perhaps just on their own. 
+
+-Hacktivist:
+
+-Insider threat:
+
+-Organized crime:
+
+-Shadow IT:
 
 +Attributes of actors
 -Internal/external
