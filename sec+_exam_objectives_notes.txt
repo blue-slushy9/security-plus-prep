@@ -264,73 +264,106 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Unskilled attacker: aka "script kiddy", an attacker who knows very little about IT and/or computer science as is most commonly using tools developed by skilled attackers. May be acting as a pawn of a skilled or unskilled group, or perhaps just on their own. 
 
--Hacktivist:
+-Hacktivist: someone who hacks for a specific cause, e.g. Edward Snowden leaking classified NSA documents and practices for the benefit of public awareness.
 
--Insider threat:
+-Insider threat: someone who hacks an organization from within the organization, Edward Snowden would also be an example of this. Motivations could include moral objections to the organization and its practices, revenge over being terminated, etc.
 
--Organized crime:
+-Organized crime: in countries like Iran or Russia, there exist entire businesses that dedicate themselves to hacking organizations in enemy countries full-time. They usually focus on attacking Western businesses and private citizens, but may also hack governments and public figures as well.
 
--Shadow IT:
+-Shadow IT: technology systems, applications, or services that are developed, acquired, or used by individuals or departments within an organization without the explicit approval or oversight of the IT department. Examples: unauthorized cloud services, unmanaged devices, unsanctioned applications. 
 
 +Attributes of actors
--Internal/external
--Resources/funding
--Level of sophistication/capability
+
+-Internal/external: refers to threat actors who are internal or external to the organization.
+
+-Resources/funding: these can come from a variety of sources, e.g. government funding for nation-state actors, hacking and other revenue from organized crime, and even from within the organization for internal threat actors.
+
+-Level of sophistication/capability: this varies from script kiddies to expert hackers.
 
 +Motivations
--Data exfiltration
--Espionage
--Service disruption
--Blackmail
--Financial gain
--Philosophical/political beliefs
--Ethical
--Revenge
--Disruption/chaos
--War
+
+-Data exfiltration: the unauthorized transfer of sensitive data from an information system to an unauthorized location, can be carried out by an internal or external actor.
+
+-Espionage: rival governments spying on each other.
+
+-Service disruption: hacking done specifically to disrupt a service provided by an organization, e.g. Planned Parenthood could be hacked by pro-life hacktivists.
+
+-Blackmail: an attacker could hack into a politician or other public figure's devices and gain access to confidential data (e.g. lewd photos) in order to extort them.
+
+-Financial gain: 
+
+-Philosophical/political beliefs: the DNC experienced data exfiltration in 2016, probably because the attacker was opposed to their party platform.
+
+-Ethical: 
+
+-Revenge: 
+
+-Disruption/chaos: 
+
+-War: Ukraine hacks Russian information systems because it opposes the Russian invasion and wants them out of the country.
 
 2.2 EXPLAIN COMMON THREAT VECTORS AND ATTACK SURFACES
 
 +Message-based
--Email
--Short Message Service (SMS)
--Instant messaging (IM)
 
-+Image-based
+-Email:
 
-+File-based
+-Short Message Service (SMS):
 
-+Voice call
+-Instant messaging (IM):
 
-+Removable device
++Image-based:
 
-+Vulnerable software
--Client-based vs. agentless
++File-based:
 
-+Unsupported systems and applications
++Voice call:
+
++Removable device:
+
++Vulnerable software:
+
+-Client-based vs. agentless:
+
++Unsupported systems and applications: 
 
 +Unsecure networks
--Wireless
--Wired
--Bluetooth
 
-+Open service ports
+-Wireless:
 
-+Default credentials
+-Wired:
 
-+Supply chain
--Managed service providers (MSPs)
--Vendors
--Suppliers
+-Bluetooth:
+
++Open service ports:
+
++Default credentials: e.g. Admin/Admin, the username and password that devices or accounts come with by default.
+
++Supply chain:
+
+-Managed service providers (MSPs):
+
+-Vendors:
+
+-Suppliers:
 
 +Human vectors/social engineering
--Phishing
--Vishing
--Smishing
--Misinformation/Disinformation
--Impersonation
--Business email compromise
--Pretexting
--Watering hole
--Brand impersonation
--Typosquatting
+
+-Phishing: sending a fraudulent email with a malicious link, the email encourages the recipient to click on the link by appearing to be normal and benign. Can also include of attack strategies, such as simply asking for sensitive information or encouraging the target to download malware.
+
+-Vishing: uses VoIP technology to deceive targets into revealing sensitive information. Attackers call and pretend to be from legitimate organizations, e.g. banks, companies, tech support. They may also leave voicemails with instructions for going to a malicious website or calling an illegitimate phone number. Strategies: creating sense of urgency, fear or intimidation, building trust and rapport. 
+
+-Smishing: uses SMS as the attack vector instead of email, basically the same as phishing and vishing aside from that. 
+
+-Misinformation/Disinformation: 
+
+-Impersonation: 
+
+-Business email compromise: 
+
+-Pretexting:
+
+-Watering hole:
+
+-Brand impersonation:
+
+-Typosquatting:
