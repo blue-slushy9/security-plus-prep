@@ -354,11 +354,11 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Smishing: uses SMS as the attack vector instead of email, basically the same as phishing and vishing aside from that. 
 
--Misinformation/Disinformation: 
+-Misinformation/Disinformation: misinformation is false or inaccurate information that is spread unintentionally; it can result from errors, misunderstandings, or a lack of knowledge. Disinformation is spread intentionally; it is often used by malicious actors to manipulate public opinion, discredit organizations, or promote misinformation.
 
 -Impersonation: 
 
--Business email compromise: 
+-Business email compromise: the target's business email is compromised, the attacker is then able to access all of the data contained therein, as well as communicate with all business contacts as if they were the target.
 
 -Pretexting:
 
