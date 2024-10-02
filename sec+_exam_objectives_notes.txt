@@ -356,14 +356,14 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Misinformation/Disinformation: misinformation is false or inaccurate information that is spread unintentionally; it can result from errors, misunderstandings, or a lack of knowledge. Disinformation is spread intentionally; it is often used by malicious actors to manipulate public opinion, discredit organizations, or promote misinformation.
 
--Impersonation: 
+-Impersonation: a type of social engineering attack in which an attacker pretends to be someone else to gain trust and access to sensitive information. It is often used in conjunction with other social engineering techniques, e.g. phishing or smishing.
 
 -Business email compromise: the target's business email is compromised, the attacker is then able to access all of the data contained therein, as well as communicate with all business contacts as if they were the target.
 
--Pretexting:
+-Pretexting: social engineering attack where an attacker impersonates someone or something to gain trust and obtain sensitive information. It involves creating a false scenario or pretext to manipulate the victim into revealing confidential data. Pretexting is often used in conjunction with other social engineering techniques, such as phishing. Examples: fake tech-support scam, phishing emails, false emergencies. 
 
--Watering hole:
+-Watering hole: a type of cyberattack where attackers target specific groups of people by compromising websites or applications that these groups frequently visit. Examples: attackers may compromise a website or social media platform if they know their targets frequent them.  
 
--Brand impersonation:
+-Brand impersonation: type of social engineering attack in which attackers pose as legitimate brands or organizations to deceive victims into revealing sensitive information or clicking on malicious links. Examples: phishing emails, fake websites, social media impersonation; often all three at the same time.
 
--Typosquatting:
+-Typosquatting: type of cyberattack in which attackers register domain names that are similar to legitimate domain names, but with slight misspellings. The goal is for users who end up typing in the wrong URL to end up on the malicious website, which may in turn trigger malware installation or it may contain a login screen where the user might be tricked into entering their credentials, etc.
