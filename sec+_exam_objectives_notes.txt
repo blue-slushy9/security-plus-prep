@@ -290,15 +290,15 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Blackmail: an attacker could hack into a politician or other public figure's devices and gain access to confidential data (e.g. lewd photos) in order to extort them.
 
--Financial gain: 
+-Financial gain: this can take many forms, one possible example is that an attacker hacks a wealthy person they discovered on social media. They might steal the target's cryptocurrency wallet credentials stored on the device and use them to transfer the target's crypto to a wallet controlled by the attacker.
 
 -Philosophical/political beliefs: the DNC experienced data exfiltration in 2016, probably because the attacker was opposed to their party platform.
 
--Ethical: 
+-Ethical: someone who knows about P. Diddy's illicit activities might hack his devices and release the pictures and other evidence to the world.
 
--Revenge: 
+-Revenge: an IT employee who was recently let go from an organization might use their extant credentials to attack the network and perform data exfiltration or service disruption.
 
--Disruption/chaos: 
+-Disruption/chaos: teenage hackers are known for exploiting organizations' networks just for fun, or to impress their friends.
 
 -War: Ukraine hacks Russian information systems because it opposes the Russian invasion and wants them out of the country.
 
@@ -306,15 +306,15 @@ concrete, or some other durable material. They are primarily used to guard again
 
 +Message-based
 
--Email:
+-Email: perhaps the most common attack surface, often includes a (spear) phishing link. Most of them involve some type of impersonation, the attacker pretends to be a member of the organization, or someone known to the target. Attachments can also be malicious, e.g. a malicious PDF file or .jpg. 
 
--Short Message Service (SMS):
+-Short Message Service (SMS): another very common attack surface, as with emails also includes a smishing link and involves impersonation. 
 
--Instant messaging (IM):
+-Instant messaging (IM): 
 
 +Image-based:
 
-+File-based:
++File-based: often malware is embedded in an outwardly innocuous file, e.g. a PDF or .JPG. Once the file is opened on the target device, the embedded malicious code is run, which can do a number of things on the device. 
 
 +Voice call:
 
