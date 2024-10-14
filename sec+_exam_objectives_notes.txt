@@ -310,21 +310,25 @@ concrete, or some other durable material. They are primarily used to guard again
 
 -Short Message Service (SMS): another very common attack surface, as with emails also includes a smishing link and involves impersonation. 
 
--Instant messaging (IM): 
+-Instant messaging (IM): these exploit vulnerabilities in IM platforms to compromise user accounts, spread malware, or steal sensitive information. Examples: Spam over IM (SPIM), viruses and worms, phishing, session hijacking, DoS, sniffing, etc.
 
-+Image-based:
++Image-based: these exploit vulnerabilities in image-processing software or file formats. It's important to keep image-editing software updated and patched, also ay attention to any unusual file extensions. Examples: steganography, malicious image, image injection, phishing, deepfakes, etc.
 
 +File-based: often malware is embedded in an outwardly innocuous file, e.g. a PDF or .JPG. Once the file is opened on the target device, the embedded malicious code is run, which can do a number of things on the device. 
 
-+Voice call:
++Voice call: also known as social engineering, this is when a person calls you on the phone and tries to manipulate you into giving them sensitive information, installing malware on your device(s), navigating to a malicious website, etc. They often pretend to be Microsoft employees or tech support, and trick targets into thinking their machine is compromised and needs immediate action. There is also vishing, voicemail hacking, spoofing, robocalls, call-forwarding attacks, voicemail-to-text attacks, etc. 
 
-+Removable device:
++Removable device: often a thumb drive, which can be configured as a rubber ducky. The device can also be a HDD/SSD, USB drive, CD/DVDs, etc. The attack can take the form of malware infection, data exfiltration, supply-chain attack (introduce malicious devices to be sold), physical access attack (e.g. USB keylogger), data smuggling (hiding data in seemingly legitimate devices). 
 
-+Vulnerable software:
++Vulnerable software: software that has not been updated or patched to keep up with the latest technology and hacking techniques. This can be deprecated software (e.g. Windows XP), or software that is still supported but the user/org just hasn't installed the updates and/or patches. Software vulnerabilities: programming errors (buffer overflows, SQL injection, XSS), misconfigurations, third-party components/dependencies or libraries used by the software. 
 
--Client-based vs. agentless:
+-Client-based vs. agentless: 
 
-+Unsupported systems and applications: 
+~Client-based attacks target client devices, e.g. computers, smartphones, etc. These attacks attempt to exploit vulnerabilities in client software, operating systems, user behavior, to hack the devices. Examples: phishing, malware, ransomware, social engineering.
+
+~Agentless attacks target network infrastructure, e.g. servers, routers, switches. These attacks exploit vulnerabilities in network devices and/or protocols to hack the entire network. Examples: DDoS, network scanning, protocol exploitation.
+
++Unsupported systems and applications: this is older software that has been discontinued by the developing organization, e.g. macOS 12. This means that the organization's developers have moved onto working on other products, or newer versions of the same products. Unsupported software is vulnerable because its vulnerabilities are no longer being patched and it is not keeping up with the latest trends in technology and the threat landscape. In addition to feature and security updates, unsupported products no longer have technical support available for them either.
 
 +Unsecure networks
 
