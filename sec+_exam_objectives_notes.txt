@@ -377,3 +377,275 @@ concrete, or some other durable material. They are primarily used to guard again
 +Application
 
 -Memory injection: 
+
+-Buffer overflow:
+
+-Race conditions:
+
+~Time-of-check (TOC):
+
+~Time-of-use (TOU):
+
++OS-based
+
++Web-based
+
+-SQL injection (SQLi):
+
+-XSS:
+
++Hardware
+
+-Firmware:
+
+-End-of-life:
+
+-Legacy:
+
++Virtualization:
+
+-VM escape:
+
+-Resource reuse:
+
++Cloud-specific:
+
++Supply chain
+
+-Service provider:
+
+-Hardware provider:
+
+-Software provider:
+
++Cryptographic:
+
++Misconfiguration:
+
++Mobile device
+
+-Side loading:
+
+-Jailbreaking:
+
++Zero-day
+
+2.4 GIVEN A SCENARIO, ANALYZE INDICATORS OF MALICIOUS ACTIVITY
+
++Malware attacks
+
+-Ransomware:
+
+-Trojan:
+
+-Worm:
+
+-Spyware:
+
+-Bloatware:
+
+-Virus:
+
+-Keylogger:
+
+-Logic bomb:
+
+-Rootkit:
+
++Physical attacks
+
+-Brute force:
+
+-Radio frequency identification (RFID) cloning:
+
+-Environmental:
+
++Network attacks
+
+-DDoS
+
+~Amplified:
+
+~Reflected:
+
+-DNS:
+
+-Wireless:
+
+-On-path:
+
+-Credential replay:
+
+-Malicious code:
+
++Application attacks
+
+-Injection:
+
+-Buffer overflow:
+
+-Replay:
+
+-Privilege escalation:
+
+-Forgery:
+
+-Directory traversal:
+
++Cryptographic attacks
+
+-Downgrade:
+
+-Collision:
+
+-Birthday:
+
++Password attacks
+
+-Spraying:
+
+-Brute force:
+
++Indicators
+
+-Account lockout:
+
+-Concurrent session usage:
+
+-Blocked content:
+
+-Impossible travel:
+
+-Resource consumption:
+
+-Resource inaccessibility:
+
+-Out-of-cycle logging:
+
+-Published/documented:
+
+-Missing logs:
+
+2.5 EXPLAIN THE PURPOSE OF MITIGATION TECHNIQUES USED TO SECURE THE ENTERPRISE
+
++Segmentation
+
++Access control
+
+-ACL:
+
+-Permissions:
+
++Application allow list
+
++Isolation
+
++Patching
+
++Encryption
+
++Monitoring
+
++Least privilege
+
++Configuration enforcement
+
++Decommissioning
+
++Hardening techniques
+
+-Encryption
+
+-Installation of endpoint protection
+
+-Host-based firewall
+
+-Host-based IPS
+
+-Disabling ports/protocols
+
+-Default password changes
+
+-Removal of unnecessary software
+
+
+3.0 SECURITY ARCHITECTURE
+
+3.1 COMPARE AND CONTRAST SECURITY IMPLICATIONS OF DIFFERENT ARCHITECTURE MODELS
+
++Architecture and infrastructure concepts
+
+-Cloud
+
+~Responsibility matrix:
+
+~Hybrid considerations:
+
+~Third-party vendors:
+
+-IaC:
+
+-Serverless:
+
+-Microservices:
+
+-Network infrastructure
+
+~Physical isolation
+
+=Air-gapped:
+
+~Logical segmentation:
+
+~SDN
+
+-On-premises:
+
+-Centralized vs decentralized
+
+-Containerization
+
+-Virtualization
+
+-IoT
+
+-ICS/SCADA
+
+-Real-time operating system (RTOS):
+
+-Embedded systems:
+
+-High availability:
+
++Considerations
+
+-Availability:
+
+-Resilience:
+
+-Cost:
+
+-Responsiveness:
+
+-Scalability:
+
+-Ease of deployment:
+
+-Scalability:
+
+-Ease of deployment:
+
+-Risk transference:
+
+-Ease of recovery:
+
+-Patch availability:
+
+-Inability to patch:
+
+-Power:
+
+-Compute:
+
+3.2 GIVEN A SCENARIO, APPLY SECURITY PRINCIPLES TO SECURE ENTERPRISE INFRASTRUCTURE
+
