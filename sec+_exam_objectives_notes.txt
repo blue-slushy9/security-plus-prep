@@ -332,23 +332,23 @@ concrete, or some other durable material. They are primarily used to guard again
 
 +Unsecure networks
 
--Wireless:
+-Wireless: the most fundamental factor that determines a wireless network's security is the version of the WPA protocol it uses, e.g. WPA and WEP encryption are deprecated. The current version is WPA3, but WPA2 is still secure. Obviously a secure password should be configured. MAC address filtering is recommended to keep out unapproved devices. You can also disable SSID broadcast to hide the network from people who don't already know about it.
 
--Wired:
+-Wired: physical security of ethernet ports is a prime concern for ethernet networks. Improperly managed cables can also create vulnerabilities, such as leaving an ethernet cable and port exposed. Underpowered or misconfigured IDPS resources can also leave the network vulnerable to attacks.
 
--Bluetooth:
+-Bluetooth: older or unpatched versions of Bluetooth software, firmware, and hardware are a common attack vector. Even the latest versions of Bluetooth can contain vulnerabilities, so it is best to turn it off when it's not in use. It is also a good idea to use strong pairing codes. Bluetooth attacks: bluejacking, bluesnarfing, bluebugging, MitM, malicious pairing, etc. 
 
-+Open service ports:
++Open service ports: these are TCP/UDP ports used for layer 4 protocols, primarily on a server but also on desktop computers. It is best to close/disable a port if the protocol it corresponds to isn't being used, as a common attack technique is to send packets that pose as a particular protocol that is known to be running on the target. Common unsecure open TCP ports: 21/FTP, 22/SSH, 23/Telnet, 80/HTTP, 443/HTTPS, 3389/RDP. 
 
-+Default credentials: e.g. Admin/Admin, the username and password that devices or accounts come with by default.
++Default credentials: e.g. Admin/Admin, the username and password that devices or accounts come with by default. Sometimes default accounts can come with no password configured at all.
 
-+Supply chain:
++Supply chain: must include securing everything from the sourcing of raw materials to the delivery of finished products. Any point in the supply chain can be targeted, and could eventually infect the entire thing. Attacks can be both physical and virtual, counterfeit products can be introduced or malware into the computer systems. Third-party vendors are common in supply chain, and if these vendors are compromised then that could be passed over to their supply-chain clients. Sensitive data at every point in the chain must also be protected.
 
--Managed service providers (MSPs):
+-Managed service providers (MSPs): MSPs to the supply chain can constitute a third-party risk because they have access to the sensitive data of their clients. If the MSP has a breach, or if there is a malicious insider at the MSP, that could lead to a supply-chain breach. 
 
--Vendors:
+-Vendors: covered above.
 
--Suppliers:
+-Suppliers: covered above.
 
 +Human vectors/social engineering
 
@@ -371,3 +371,9 @@ concrete, or some other durable material. They are primarily used to guard again
 -Brand impersonation: type of social engineering attack in which attackers pose as legitimate brands or organizations to deceive victims into revealing sensitive information or clicking on malicious links. Examples: phishing emails, fake websites, social media impersonation; often all three at the same time.
 
 -Typosquatting: type of cyberattack in which attackers register domain names that are similar to legitimate domain names, but with slight misspellings. The goal is for users who end up typing in the wrong URL to end up on the malicious website, which may in turn trigger malware installation or it may contain a login screen where the user might be tricked into entering their credentials, etc.
+
+2.3 EXPLAIN VARIOUS TYPE OF VULNERABILITIES
+
++Application
+
+-Memory injection: 
