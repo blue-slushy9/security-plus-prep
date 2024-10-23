@@ -376,15 +376,31 @@ concrete, or some other durable material. They are primarily used to guard again
 
 +Application
 
--Memory injection: 
+-Memory injection: malicious code is injected into a running process' memory space (buffer), this allows an attacker to gain unauthorized access to the process and potentially execute arbitrary code or steal sensitive data. Common techniques: buffer overflow, shellcode injection, return-oriented programming (ROP), heap overflow, etc.
 
--Buffer overflow:
+~Return-oriented programming (ROP): using existing code fragments (gadgets) within a process' memory to construct a chain of instructions that execute malicious code.
 
--Race conditions:
+~Heap: a region of memory used for dynamic memory allocation. This means that memory is allocated and deallocated during the execution of a program, as opposed to being allocated statically at compile time. To prevent heap-related issues, programmers must carefully manage memory allocation and deallocation. Techniques like garbage collection can help automate memory management in some programming languages. Issues: memory leaks, heap fragmentation, heap overflows.
 
-~Time-of-check (TOC):
+~Heap overflow: exploiting vulnerabilities in the heap memory allocation system to overwrite memory and execute malicious code. 
 
-~Time-of-use (TOU):
+-Buffer overflow: occurs when a block of memory (buffer) exceeds its capacity and begins to overwrite adjacent memory cells. This can cause code to run with erroneous data, which can lead to unexpected behaviors in the program. Malicious code can even be written into adjacent memory cells and run by the system, allowing the attacker to access the data in memory, gain control of the process, or even gain access to the system. Sub-types: heap buffer overflow, stack buffer overflow. Mitigation methods: input validation, safe string-handling, memory-safety languages (e.g. Rust, Go), etc.
+
+~Stack: data structure that follows the Last-In, First-Out (LIFO) principle. This means that the last element added to the stack is the first one to be removed. It is often visualized as a stack of plates, where the top plate is the last one added and the first one to be taken off. 
+
+=Operations: Push adds an element to the top, Pop removes the top element, Peek returns the top element without removing it, IsEmpty checks if the stack is empty.
+
+=Uses: function calls, expression evaluation, recursion, backtracking algorithms (e.g. DFS, BFS).
+
+-Race conditions: situations where the outcome of a program or system depends on the timing or interleaving of multiple concurrent operations. When these operations are not properly synchronized, it can lead to unexpected and potentially harmful results. 
+
+~Causes: shared data, incorrect synchronization, timing-dependent code. Impact: data corruption, incorrect behavior, security vulnerabilities. 
+
+~Mitigation methods: synchronization mechanisms, avoid shared data, careful programming, testing and debugging. 
+
+~Time-of-check (TOC): these attacks exploit 
+
+~Time-of-use (TOU): 
 
 +OS-based
 
