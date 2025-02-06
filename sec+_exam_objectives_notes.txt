@@ -1,0 +1,667 @@
+1.0 GENERAL SECURITY CONCEPTS
+
+1.1 COMPARE AND CONTRAST VARIOUS TYPES OF SECURITY CONTROLS
+
+
++Categories
+
+-Technical: safeguards and countermeasures implemented using technology,
+e.g. access control, encryption, firewalls, IDS/IPS, antivirus, SIEM,
+DLP, network segmentation, logging & auditing, patch management, secure configuration management, vulnerability scanners, backup & recovery, MFA,
+remote access, NAC, security tokens & smart cards, PKI, file integrity monitoring, web content filters, etc.
+
+-Managerial: AKA administrative controls; these are policies, procedures, and guidelines that govern how an organization manages and protects its information systems. Their purpose is to secure the organizational environment and ensure compliance with regulations. Examples: password policy, security awareness training, disaster recovery and business continuity plans, security audits and vulnerability assessments, incident response plans.
+
+-Operational: Day-to-day activities that implement and enforce the managerial controls, they are the tactical level of security management. Examples: user access reviews, incident response procedures, security awareness training.
+
+-Physical: safeguards that protect people, property, and infrastructure from threats. Examples: locks, keys, biometric authentication, barriers such as fences and gates; fire suppression, HVAC, power protection; lights, fences, security guards, watchdogs; alarms, access control; visitor management, background checks; data protection for tangible media.
+
+
+
++Control types
+
+-Preventive: security measures designed to proactively stop an incident, the first line of defense in an organization's security strategy. Examples: physical, technical, and administrative controls; passwords, IDS, ACLs, encryption, security training.
+
+-Deterrent: designed to discourage potential attackers. Examples: warning signs, security guards, advertisement of IDS, cable locks, advertisement of DLP policies, e.g. retaliatory legal action.
+
+-Detective: designed to discover security incidents and unauthorized activity after they have occurred, they help to identify and document security events. Examples: IDS, log monitoring, security audits, vulnerability assessments, continuous monitoring, penetration testing, video surveillance. 
+
+-Corrective: implemented to fix problems or vulnerabilities after a security incident has occurred. They focus on minimizing the impact of  breach and restoring systems to normal operations. Examples: data restoration, system recovery, patch management, incident response plan, legal action.
+
+-Compensating: these are alternative security measures implemented when a primary control is not feasible or practical. They maintain an acceptable level of security even when a preferred control cannot be fully implemented. Examples: IDS in lieu of physical security, access controls in lieu of encryption, security training in lieu of technical controls. 
+
+-Directive: these are the security policies, procedures, and guidelines of an organization; they provide the framework for other security controls. They are often documented in written form. Examples: standards, baselines.
+
+1.2 SUMMARIZE FUNDAMENTAL SECURITY CONCEPTS
+
++Confidentiality, Integrity, and Availability (CIA)
+
++Non-repudiation: the state of a system or resource to be tracked and monitored in such a way that any changes to it cannot be concealed or denied by the responsible party.
+
++Authentication, Authorization, and Accounting (AAA)
+
+-Authenticating people
+-Authenticating systems
+
+-Authorization models: frameworks for controlling access to resources. Examples: Mandatory access control (MAC), Discretionary access control (DAC), Role-Based access control (RBAC), Rule-Based access control, Attribute-based access control (ABAC), Time-based access control, Least privilege, Separation of duties.
+
++Gap analysis: a method of assessing the difference between an organization's current security posture and its desired or required security state. 
+
++Zero trust: the security principle, "never trust, always verify." In other words, no user, device, or network should ever be automatically trusted.
+
+-Control plane: framework that represents the decision-making and policy-enforcing components within a network or security system. It is responsible for determining how data should be processed, forwarded, or blocked based on defined security policies.
+
+~Adaptive identity: dynamic approach to authentication that adjusts the level of security based on various factors, e.g. user behavior, location, device, and time. It is a more sophisticated form of MFA. 
+
+~Threat scope reduction: principle aimed at minimizing the potential impact of a successful cyberattack. It involves limiting user access to only the systems and data necessary for their job functions. It also includes other safeguards, e.g. network segmentation, data classification, in order to ensure damage control in the case of a breach.
+
+~Policy-driven access control: access control based on organizational policy, e.g. least privilege.
+
+~Policy administrator: the member(s) of the organization who are responsible for administering and overseeing policy implementation.
+
+~Policy engine: software component responsible for enforcing security policies within a system or network, the core of PBAC. Functions: policy evaluation, access decision, real-time enforcement, auditing and logging.
+
+-Data plane: operational component of a network or security device that handles the actual processing and forwarding of network data. Examples: packet forwarding, data processing, traffic management, security enforcement.
+
+~Implicit trust zones: a collection of resources that are granted a certain level of trust based on their function and/or location in the network. As a component of the Zero Trust Architecture (ZTA) framework, operates on the principle that no user or device should be implicitly or automatically trusted. Also includes network segmentation, limited access, dynamic trust, etc.
+
+~Subject/System: an individual, device, or larger system; basically units that can be assessed for their threat/security level or status. They initiate actions or requests, such as to resources or objects. Processes and applications can also be subjects.
+
+~Policy enforcement point (PEP): security component or mechanism that enforces access control policies at the point where access requests are made, e.g. firewalls, proxy servers, ACLs.
+
++Physical security
+
+-Bollards: sturdy, short, vertical posts made of steel, 
+concrete, or some other durable material. They are primarily used to guard against motor vehicles.
+
+-Access control vestibule
+-Fencing
+-Security guard
+-Access badge
+-Lighting
+
+-Sensors: 
+
+~Infrared: electronic devices that detect infrared radiation, typically in the form of heat emitted by objects or living beings.
+
+~Pressure: detect changes in pressure or weight on a usrface or within a protected area, e.g. people, objects, vehicles. Examples: mat sensors, plate sensors, strain gauges.
+
+~Microwave: emit and detect microwave electromagnetic radiation to sense movement or presence within a defined area. The movement or presence of a foreign object is detected by interpreting the reflected signals.
+
+~Ultrasonic: emit and detect high-frequency sound waves, typically above the range of human hearing, to sense the movement or presence of objects in a defined area. The movement or presence of a foreign object is detected by interpreting the reflected signals.
+
++Deception and disruption technology: security controls and techniques designed to mislead, confuse, or disrupt the activities of potential attackers. Examples: honeypots, honeytokens, misinformation, fake data, deceptive network traffic, obfuscation.
+
+-Honeypot: a host, usually a webserver, that is deliberately exposed to the internet in a vulnerable or semi-vulnerable state in order to collect data on would-be attackers.
+
+-Honeynet: a network of honeypots designed to attract and monitor the activities of potential attackers. Each component honeypot is designed to mimic a different type of system or service. 
+
+-Honeyfile: fake or decoy file designed to attract and lure potential attackers, allowing security teams to detect, monitor, and study their activities.
+
+-Honeytoken: digital entity or piece of information designed to attract and detect unauthorized access or use. They might be scattered throughout systems and databases, and monitored for attempted use. Examples: fake user credentials, bogus database entries, fake API keys. 
+
+
+1.3 EXPLAIN THE IMPORTANCE OF CHANGE MANAGEMENT PROCESSES AND THE IMPACT TO SECURITY
+
++Business processes impacting security operation
+
+-Approval process: the formal procedures and steps an organization follows evaluate, authorize, and implement security-related changes, projects, or initiatives. 
+
+-Ownership: the responsibility and authority associated with a particular asset or resource. Examples: ownership of data, systems, assets. 
+
+-Stakeholders: individuals or entities that have an interest in the security of an organization's information systems, can be internal or external. Examples: management, employees, customers, partners, regulators, shareholders. 
+
+-Impact analysis: the process of assessing the potential consequences of a security breach or incident, this helps organizations prioritize risks and allocate resources. 
+
+-Test results: outcomes of security assessments and tests conducted within an organization. Examples: vulnerability assessments, penetration test outcomes, security audit reports, incident response reports.
+
+-Backout plan: contingency plan designed to reverse the effects of a change or update to a system if it causes problems or vulnerabilities. Key components: identification of critical changes, documentation of procedures, testing and validation, communication plan.
+
+-Maintenance window: a span of time, usually overnight, during which maintenance on machines is carried out. Example: the maintenance window for an organization's webservers may be from midnight to 5am every night; alternatively, it may be one night a week.
+
+-Standard operating procedure: the standard set of steps by which a given task is carried out. Example: the SOP for user onboarding may be to run a shell script.
+
+
++Technical implications
+
+-Allow lists: aka whitelists, these are lists of users, groups, services, etc. that are allowed access to a particular resource.
+
+-Deny lists: aka blacklists, these are lists of users, groups, services, etc. that are not allowed access to a particular resource.
+
+-Downtime: the amount of time for which a machine, service, etc. is not available to serve requests or otherwise carry out its normal function.
+
+-Service restart: can enhance the security of a service in that some patches may requires a service reboot to install. Oftentimes, rebooting a service also enhances its overall performance if it has been running for a while; as it ensures all of the underlying code and sub-services are running properly.
+
+-Application restart: same as above, really.
+
+-Legacy applications: applications from many years ago that are no longer supported by the software distributor. These are very sensitive because, since they're no longer receiving security patches, they are extremely vulnerable to attackers. If an organization absolutely must use legacy software, it should most definitely not be connected to the internet; it should also be run in its own secure subnet in the organization's network.
+
+-Dependencies: these are software components required to run other software. Certain types of software can have a very high number of dependencies, which can be a security risk depending on the repos that are configured on the system. As long as the dependencies and repo(s) are secure (i.e. the dependencies are still supported and the repos are reputable), then installing them should not pose a higher-than-average security risk.
+
+
++Documentation
+
+-Updating diagrams: these should be updated every time there is a change to the network, be that physical or logical.
+
+-Updates policies/procedures: these should be updated over time, since the threat landscape is ever in a state of flux. They should also be updated in the event of a breach, in order to improve security in the future. They should also be updated based on the results of pentests, security audits, etc.
+
+
++Version control: software that allows you to track changes made to files, usually program files used by developers. Version control allows you to keep track of changes made to these files and roll back as needed. Example: Git.
+
+1.4 EXPLAIN THE IMPORTANCE OF USING APPROPRIATE CRYPTOGRAPHIC SOLUTIONS
+
++Public key infrastructure (PKI)
+
+-Public key: the key that the entire world has access to, used to encrypt any data sent to the recipient.
+
+-Private key: the key that only the recipient of the aforementioned data has access to, used to decrypt any data sent to them that has been encrypted with their public key.
+
+-Key escrow: a security practice in which a third party holds a copy of the cryptographic key, allowing them to decrypt data under certain circumstances; often for compliance reasons or to provide a means of recovering data in case of key loss. The escrow agent can only release the key if certain conditions are met, e.g. court order or emergency.
+
++Encryption
+-Level: different levels of encryption are possible based on the data that is on the disk and the levels of access needed to it.
+
+~Full disk: the entire disk is encrypted.
+
+~Partition: a partition is a *physical* division in a disk. If a partition(s) on the disk is encrypted, the other partitions can still be accessed without the decryption key, but not this one.
+
+~File: this type of encryption can be useful if the storage device or system is compromised, because even if the attackers gains access to the underlying system, they will still not be able to access the file data. Alternatively, you can apply multiple levels of encryption: at the level of full disk as well as the file.
+
+~Volume: similar to a partition, except that it is a *logical* division of the disk instead of a physical one. A volume can be created on a single partition or multiple. A single partition can be used to create multiple volumes.
+
+~Database: can take the form of field-level, row-level, column-level, or even full-disk encryption. 
+
+~Record: this refers to individual records in a database. This means that each row or entry in a database table is encrypted. Since encryption is applied at the individual record level, this provides granular control. This way, if the database is compromised, not all of its records will be accessible to the attacker. 
+
+-Transport/communication: the process of encrypting data while it is being transmitted over a network. Protocols and tools: TLS, IPsec (this is more of a suite of protocols), VPNs. 
+
+-Asymmetric: one key is used to encrypt, a different one is used to decrypt. The most common example is PKI, which uses a public key for encryption and a private key for decryption.
+
+-Symmetric: same key is used to encrypt and decrypt the data, this is generally highly insecure in today's threat landscape.
+
+-Key exchange: a highly sensitive process as interception of any private keys can lead to data compromise. If symmetric encryption is being used, it is essential that the channel over which the key is exchanged be absolutely secure. For asymmetric key exchange, the communication channel doesn't need to be secure since the public key is freely shared anyway.
+
+-Algorithms: a set of steps for accomplishing a given task. Encryption algorithms are based on mathematics, and are used to transform the data into an unintelligible format which can only be reversed using a decryption key.
+
+-Key length: generally, longer keys are more secure as an attacker would have to get all characters correct in order to gain access. Modern processors are powerful enough to fairly easily crack a 10-20 character key, whereas a key of 50+ characters would take far longer. Using bits as the metric, 128 is fairly secure; 256 is highly secure; and 512 is extremely secure but may impact performance.
+
++Tools
+
+-Trusted Platform Module (TPM): a hardware-based security chip embedded on a motherboard, provides cryptographic functions and secure storage for sensitive data.
+
+~Key functions:
+
+=Secure Boot: verifies integrity of the boot process to prevent malware from loading before the OS.
+
+=Hardware-based key generation: generates and stores cryptographic keys securely on the chip. Hardware-based cryptographic operations are more secure than their software-based counterparts.
+
+=Data encryption: encrypts sensitive data like passwords and encryption keys.
+
+=Measured Boot: records the sequence of boot components to detect tampering.
+
+=Attestation: provides evidence of a system's hardware and software configuration. 
+
+
+-Hardware security module (HSM): specialized piece of hardware designed to protect cryptographic keys and perform cryptographic operations securely; it is a dedicated device. Functions: generates and stores keys; performs cryptographic functions, e.g. digital signing, hashing; protects cryptographic operations from software-based attacks.
+
+-Key management system: critical component of security infrastructure responsible for managing cryptographic keys; ensures the secure generation, storage, distribution, and revocation of keys. KMSes can be hardware- or software-based, e.g. HSMs, TPMs, Keycloak.
+
+-Secure enclave: hardware-based security module found in some modern processors (e.g. Apple A-series and Intel SGX); it provides a secure and isolated environment for sensitive operations like key storage, cryptographic computations, and authentication. Use cases: secure boot, hardware-based encryption, mobile payments, IoT security.
+
+
++Obfuscation: process of making data or code difficult to understand or analyze to make it harder for attackers to reverse-engineer or exploit. Techniques: renaming variables, rearranging code structure, adding noise; encryption, substitution, transposition; disguising network traffic.
+
+-Steganography: technique used to hide data within other data, making it difficult to detect that the hidden information exists. The carrier is the overt data, the payload is the hidden data. Steganalysis is the process of extracting the payload from the carrier. Subtypes: text, image, audio, video. 
+
+-Tokenization: process of replacing sensitive data (e.g. credit card numbers, personal identifiers) with a unique code or token; the token is then used in place of the original data for subsequent transactions or interactions. When needed, the token can be used to retrieve the original data as the two become associated in storage. 
+
+-Data masking: used to protect sensitive data by concealing or replacing it with non-sensitive information. This is often done to prevent unauthorized access or misuse of data, especially during development, testing, or backup activities. Example: masking credit card numbers with Xs or random digits.
+
++Hashing: unlike encryption algorithms, hashing algorithms are designed to be irreversible. This makes it even more secure than encryption, in that even if an attacker were to gain access to a hash, they would still not be able to unscramble the data.
+
++Salting: technique used to enhance the security of password hashing. A random value, known as a salt, is added to the password before hashing it. The salt is then stored alongside the hashed password. Salting is used to prevent rainbow table attacks (see below).
+
++Rainbow table: precomputed table used to reverse cryptographic hash functions, used for cracking passwords more quickly. This is because passwords are almost always stored as hashes, so rainbow tables make it easier to map common passwords to their corresponding hashes.
+
++Digital signatures: cryptographic techniques used to verify the authenticity and integrity of digital data. They provide a way to ensure that a message or file has not been tampered with and originated from the trusted sender. Process: the sender creates a digital signature using a private key, which is then attached to the message. The recipient can verify the signature using the sender's public key. ?????? # Not sure Gemini is correct about this one
+
++Key stretching: technique used to increase the computational effort required to derive a cryptographic key from a password or passphrase. This makes it more difficult for attackers to brute-force or dictionary-attack passwords, even if they have the password hash. Process: a password or passphrase is repeatedly hashed using a strong hashing algorithm with a high iteration count. This increases the time and resources required to derive the key. Key stretching is commonly used password storage systems, especially in long-term storage of sensitive information. Key-stretching algorithms: PBKDF2, bcrypt, scrypt.
+
++Blockchain: decentralized, distributed ledger technology that records transactions in a secure and transparent manner. Blockchain networks are distributed across multiple computers, making them resistant to censorship and single points of failure. Once a transaction is recorded on a blockchain, it is difficult or impossible to alter or delete, ensuring data integrity. All transactions on a blockchain are publicly visible, providing transparency and accountability. Blockchain networks use consensus mechanisms to validate transactions and maintain the integrity of the ledger. Blockchain technology offers strong security features, including cryptographic hashing and digital signatures. 
+
++Open public ledger: distributed database that is accessible to anyone with an internet connection. It records transactions and data in a transparent and immutable manner. Examples: blockchain, public blockchain.
+
++Certificates
+
+-Certificate authorities (CAs): trusted third-party entity that issues digital certificates, which are used to verify the identity of individuals, organizations, or devices. CAs are a fundamental component of PKI, because CAs are the trusted third party that issues the certificates that bind public keys to specific entities. 
+
+-Certificate revocation lists (CRLs): lists of digital certificates that have been revoked by a CA. CRLs are used to inform users and systems that a certificate is no longer valid. CRLs are typically distributed through a network protocol called Certificate Status Protocol (CSP). Users and systems can check CRLs to verify the validity of a certificate before using it. The effectiveness of CRLs depends on how quickly they are updated and distributed.
+
+-Online Certificate Status Protocol (OCSP): a more efficient method for checking certificate status in real-time. When a system needs to verify the validity of a certificate, it sends a query to an OCSP responder. The responder checks its database to see if the certificate has been revoked. It then sends a response to the querying system: Good, Revoked, or Unknown.
+
+-Self-signed: a certificate that has been created, signed, and verified by the same party to which it belongs. Generally not very trustworthy, for obvious reasons. There is no external CA involved in this process. They are often used in development or testing environments, also in internal networks. 
+
+-Third-party: a certificate that has been created, signed, and verified by a different party than that to which it belongs; typically a CA.
+
+-Root of trust certificate: digital certificate that serves as the foundation for trust in a cryptographic system. It is the highest level of authority in a public key infrastructure (PKI) hierarchy. They are typically self-signed, comes pre-installed on devices or OSes, and are trusted by systems by default in order to verify other certificates in the chain. 
+
+~Process: when a system needs to verify the authenticity of an intermediate certificate, it checks the signature against the public key of the RoT certificate. Intermediate certificates can then verify the authenticity of end-entity certificates (e.g. website certificates).
+
+-Certificate signing request (CSR) generation: process of creating a CSR, which is a text file that contains information about an entity (e.g. website, server, individual) requesting a digital certificate. This information is used by a CA to verify the entity's identity and issue a corresponding certificate. 
+
+-Wildcard: a type of digital certificate that can be used to secure multiple domains within a single domain namespace. It is characterized by the use of an asterisk as a placeholder for any subdomain. Wildcard certificates are cost-effective and dynamic, but can expose multiple domains if there is a vulnerability. Examples: *.example.com would secure all subdomains of example.com, such as shop.example.com or www.example.com.
+
+-Root of trust: RoT, refers to the foundation upon which trust in a system is built. It is the trusted source that verifies the authenticity of other components within the system. Examples: BIOS/UEFI, TPM, secure boot keys.
+
+
+2.0 THREATS, VULNERABILITIES, AND MITIGATION
+
+2.1 COMPARE AND CONTRAST COMMON THREAT ACTORS AND MOTIVATIONS
+
++Threat actors
+
+-Nation-state: governments of countries, or a subdivision thereof, that seek to carry out cyberattacks on enemy countries. US examples: Russia, North Korea, China.
+
+-Unskilled attacker: aka "script kiddy", an attacker who knows very little about IT and/or computer science as is most commonly using tools developed by skilled attackers. May be acting as a pawn of a skilled or unskilled group, or perhaps just on their own. 
+
+-Hacktivist: someone who hacks for a specific cause, e.g. Edward Snowden leaking classified NSA documents and practices for the benefit of public awareness.
+
+-Insider threat: someone who hacks an organization from within the organization, Edward Snowden would also be an example of this. Motivations could include moral objections to the organization and its practices, revenge over being terminated, etc.
+
+-Organized crime: in countries like Iran or Russia, there exist entire businesses that dedicate themselves to hacking organizations in enemy countries full-time. They usually focus on attacking Western businesses and private citizens, but may also hack governments and public figures as well.
+
+-Shadow IT: technology systems, applications, or services that are developed, acquired, or used by individuals or departments within an organization without the explicit approval or oversight of the IT department. Examples: unauthorized cloud services, unmanaged devices, unsanctioned applications. 
+
++Attributes of actors
+
+-Internal/external: refers to threat actors who are internal or external to the organization.
+
+-Resources/funding: these can come from a variety of sources, e.g. government funding for nation-state actors, hacking and other revenue from organized crime, and even from within the organization for internal threat actors.
+
+-Level of sophistication/capability: this varies from script kiddies to expert hackers.
+
++Motivations
+
+-Data exfiltration: the unauthorized transfer of sensitive data from an information system to an unauthorized location, can be carried out by an internal or external actor.
+
+-Espionage: rival governments spying on each other.
+
+-Service disruption: hacking done specifically to disrupt a service provided by an organization, e.g. Planned Parenthood could be hacked by pro-life hacktivists.
+
+-Blackmail: an attacker could hack into a politician or other public figure's devices and gain access to confidential data (e.g. lewd photos) in order to extort them.
+
+-Financial gain: this can take many forms, one possible example is that an attacker hacks a wealthy person they discovered on social media. They might steal the target's cryptocurrency wallet credentials stored on the device and use them to transfer the target's crypto to a wallet controlled by the attacker.
+
+-Philosophical/political beliefs: the DNC experienced data exfiltration in 2016, probably because the attacker was opposed to their party platform.
+
+-Ethical: someone who knows about P. Diddy's illicit activities might hack his devices and release the pictures and other evidence to the world.
+
+-Revenge: an IT employee who was recently let go from an organization might use their extant credentials to attack the network and perform data exfiltration or service disruption.
+
+-Disruption/chaos: teenage hackers are known for exploiting organizations' networks just for fun, or to impress their friends.
+
+-War: Ukraine hacks Russian information systems because it opposes the Russian invasion and wants them out of the country.
+
+2.2 EXPLAIN COMMON THREAT VECTORS AND ATTACK SURFACES
+
++Message-based
+
+-Email: perhaps the most common attack surface, often includes a (spear) phishing link. Most of them involve some type of impersonation, the attacker pretends to be a member of the organization, or someone known to the target. Attachments can also be malicious, e.g. a malicious PDF file or .jpg. 
+
+-Short Message Service (SMS): another very common attack surface, as with emails also includes a smishing link and involves impersonation. 
+
+-Instant messaging (IM): these exploit vulnerabilities in IM platforms to compromise user accounts, spread malware, or steal sensitive information. Examples: Spam over IM (SPIM), viruses and worms, phishing, session hijacking, DoS, sniffing, etc.
+
++Image-based: these exploit vulnerabilities in image-processing software or file formats. It's important to keep image-editing software updated and patched, also ay attention to any unusual file extensions. Examples: steganography, malicious image, image injection, phishing, deepfakes, etc.
+
++File-based: often malware is embedded in an outwardly innocuous file, e.g. a PDF or .JPG. Once the file is opened on the target device, the embedded malicious code is run, which can do a number of things on the device. 
+
++Voice call: also known as social engineering, this is when a person calls you on the phone and tries to manipulate you into giving them sensitive information, installing malware on your device(s), navigating to a malicious website, etc. They often pretend to be Microsoft employees or tech support, and trick targets into thinking their machine is compromised and needs immediate action. There is also vishing, voicemail hacking, spoofing, robocalls, call-forwarding attacks, voicemail-to-text attacks, etc. 
+
++Removable device: often a thumb drive, which can be configured as a rubber ducky. The device can also be a HDD/SSD, USB drive, CD/DVDs, etc. The attack can take the form of malware infection, data exfiltration, supply-chain attack (introduce malicious devices to be sold), physical access attack (e.g. USB keylogger), data smuggling (hiding data in seemingly legitimate devices). 
+
++Vulnerable software: software that has not been updated or patched to keep up with the latest technology and hacking techniques. This can be deprecated software (e.g. Windows XP), or software that is still supported but the user/org just hasn't installed the updates and/or patches. Software vulnerabilities: programming errors (buffer overflows, SQL injection, XSS), misconfigurations, third-party components/dependencies or libraries used by the software. 
+
+-Client-based vs. agentless: 
+
+~Client-based attacks target client devices, e.g. computers, smartphones, etc. These attacks attempt to exploit vulnerabilities in client software, operating systems, user behavior, to hack the devices. Examples: phishing, malware, ransomware, social engineering.
+
+~Agentless attacks target network infrastructure, e.g. servers, routers, switches. These attacks exploit vulnerabilities in network devices and/or protocols to hack the entire network. Examples: DDoS, network scanning, protocol exploitation.
+
++Unsupported systems and applications: this is older software that has been discontinued by the developing organization, e.g. macOS 12. This means that the organization's developers have moved onto working on other products, or newer versions of the same products. Unsupported software is vulnerable because its vulnerabilities are no longer being patched and it is not keeping up with the latest trends in technology and the threat landscape. In addition to feature and security updates, unsupported products no longer have technical support available for them either.
+
++Unsecure networks
+
+-Wireless: the most fundamental factor that determines a wireless network's security is the version of the WPA protocol it uses, e.g. WPA and WEP encryption are deprecated. The current version is WPA3, but WPA2 is still secure. Obviously a secure password should be configured. MAC address filtering is recommended to keep out unapproved devices. You can also disable SSID broadcast to hide the network from people who don't already know about it.
+
+-Wired: physical security of ethernet ports is a prime concern for ethernet networks. Improperly managed cables can also create vulnerabilities, such as leaving an ethernet cable and port exposed. Underpowered or misconfigured IDPS resources can also leave the network vulnerable to attacks.
+
+-Bluetooth: older or unpatched versions of Bluetooth software, firmware, and hardware are a common attack vector. Even the latest versions of Bluetooth can contain vulnerabilities, so it is best to turn it off when it's not in use. It is also a good idea to use strong pairing codes. Bluetooth attacks: bluejacking, bluesnarfing, bluebugging, MitM, malicious pairing, etc. 
+
++Open service ports: these are TCP/UDP ports used for layer 4 protocols, primarily on a server but also on desktop computers. It is best to close/disable a port if the protocol it corresponds to isn't being used, as a common attack technique is to send packets that pose as a particular protocol that is known to be running on the target. Common unsecure open TCP ports: 21/FTP, 22/SSH, 23/Telnet, 80/HTTP, 443/HTTPS, 3389/RDP. 
+
++Default credentials: e.g. Admin/Admin, the username and password that devices or accounts come with by default. Sometimes default accounts can come with no password configured at all.
+
++Supply chain: must include securing everything from the sourcing of raw materials to the delivery of finished products. Any point in the supply chain can be targeted, and could eventually infect the entire thing. Attacks can be both physical and virtual, counterfeit products can be introduced or malware into the computer systems. Third-party vendors are common in supply chain, and if these vendors are compromised then that could be passed over to their supply-chain clients. Sensitive data at every point in the chain must also be protected.
+
+-Managed service providers (MSPs): MSPs to the supply chain can constitute a third-party risk because they have access to the sensitive data of their clients. If the MSP has a breach, or if there is a malicious insider at the MSP, that could lead to a supply-chain breach. 
+
+-Vendors: covered above.
+
+-Suppliers: covered above.
+
++Human vectors/social engineering
+
+-Phishing: sending a fraudulent email with a malicious link, the email encourages the recipient to click on the link by appearing to be normal and benign. Can also include of attack strategies, such as simply asking for sensitive information or encouraging the target to download malware.
+
+-Vishing: uses VoIP technology to deceive targets into revealing sensitive information. Attackers call and pretend to be from legitimate organizations, e.g. banks, companies, tech support. They may also leave voicemails with instructions for going to a malicious website or calling an illegitimate phone number. Strategies: creating sense of urgency, fear or intimidation, building trust and rapport. 
+
+-Smishing: uses SMS as the attack vector instead of email, basically the same as phishing and vishing aside from that. 
+
+-Misinformation/Disinformation: misinformation is false or inaccurate information that is spread unintentionally; it can result from errors, misunderstandings, or a lack of knowledge. Disinformation is spread intentionally; it is often used by malicious actors to manipulate public opinion, discredit organizations, or promote misinformation.
+
+-Impersonation: a type of social engineering attack in which an attacker pretends to be someone else to gain trust and access to sensitive information. It is often used in conjunction with other social engineering techniques, e.g. phishing or smishing.
+
+-Business email compromise: the target's business email is compromised, the attacker is then able to access all of the data contained therein, as well as communicate with all business contacts as if they were the target.
+
+-Pretexting: social engineering attack where an attacker impersonates someone or something to gain trust and obtain sensitive information. It involves creating a false scenario or pretext to manipulate the victim into revealing confidential data. Pretexting is often used in conjunction with other social engineering techniques, such as phishing. Examples: fake tech-support scam, phishing emails, false emergencies. 
+
+-Watering hole: a type of cyberattack where attackers target specific groups of people by compromising websites or applications that these groups frequently visit. Examples: attackers may compromise a website or social media platform if they know their targets frequent them.  
+
+-Brand impersonation: type of social engineering attack in which attackers pose as legitimate brands or organizations to deceive victims into revealing sensitive information or clicking on malicious links. Examples: phishing emails, fake websites, social media impersonation; often all three at the same time.
+
+-Typosquatting: type of cyberattack in which attackers register domain names that are similar to legitimate domain names, but with slight misspellings. The goal is for users who end up typing in the wrong URL to end up on the malicious website, which may in turn trigger malware installation or it may contain a login screen where the user might be tricked into entering their credentials, etc.
+
+2.3 EXPLAIN VARIOUS TYPE OF VULNERABILITIES
+
++Application
+
+-Memory injection: malicious code is injected into a running process' memory space (buffer), this allows an attacker to gain unauthorized access to the process and potentially execute arbitrary code or steal sensitive data. Common techniques: buffer overflow, shellcode injection, return-oriented programming (ROP), heap overflow, etc.
+
+~Return-oriented programming (ROP): using existing code fragments (gadgets) within a process' memory to construct a chain of instructions that execute malicious code.
+
+~Heap: a region of memory used for dynamic memory allocation. This means that memory is allocated and deallocated during the execution of a program, as opposed to being allocated statically at compile time. To prevent heap-related issues, programmers must carefully manage memory allocation and deallocation. Techniques like garbage collection can help automate memory management in some programming languages. Issues: memory leaks, heap fragmentation, heap overflows.
+
+~Heap overflow: exploiting vulnerabilities in the heap memory allocation system to overwrite memory and execute malicious code. 
+
+-Buffer overflow: occurs when a block of memory (buffer) exceeds its capacity and begins to overwrite adjacent memory cells. This can cause code to run with erroneous data, which can lead to unexpected behaviors in the program. Malicious code can even be written into adjacent memory cells and run by the system, allowing the attacker to access the data in memory, gain control of the process, or even gain access to the system. Sub-types: heap buffer overflow, stack buffer overflow. Mitigation methods: input validation, safe string-handling, memory-safety languages (e.g. Rust, Go), etc.
+
+~Stack: data structure that follows the Last-In, First-Out (LIFO) principle. This means that the last element added to the stack is the first one to be removed. It is often visualized as a stack of plates, where the top plate is the last one added and the first one to be taken off. 
+
+=Operations: Push adds an element to the top, Pop removes the top element, Peek returns the top element without removing it, IsEmpty checks if the stack is empty.
+
+=Uses: function calls, expression evaluation, recursion, backtracking algorithms (e.g. DFS, BFS).
+
+-Race conditions: situations where the outcome of a program or system depends on the timing or interleaving of multiple concurrent operations. When these operations are not properly synchronized, it can lead to unexpected and potentially harmful results. 
+
+~Causes: shared data, incorrect synchronization, timing-dependent code. Impact: data corruption, incorrect behavior, security vulnerabilities. 
+
+~Mitigation methods: synchronization mechanisms, avoid shared data, careful programming, testing and debugging. 
+
+~Time-of-check (TOC): these attacks exploit 
+
+~Time-of-use (TOU): 
+
++OS-based
+
++Web-based
+
+-SQL injection (SQLi):
+
+-XSS:
+
++Hardware
+
+-Firmware:
+
+-End-of-life:
+
+-Legacy:
+
++Virtualization:
+
+-VM escape:
+
+-Resource reuse:
+
++Cloud-specific:
+
++Supply chain
+
+-Service provider:
+
+-Hardware provider:
+
+-Software provider:
+
++Cryptographic:
+
++Misconfiguration:
+
++Mobile device
+
+-Side loading:
+
+-Jailbreaking:
+
++Zero-day
+
+2.4 GIVEN A SCENARIO, ANALYZE INDICATORS OF MALICIOUS ACTIVITY
+
++Malware attacks
+
+-Ransomware:
+
+-Trojan:
+
+-Worm:
+
+-Spyware:
+
+-Bloatware:
+
+-Virus:
+
+-Keylogger:
+
+-Logic bomb:
+
+-Rootkit:
+
++Physical attacks
+
+-Brute force:
+
+-Radio frequency identification (RFID) cloning:
+
+-Environmental:
+
++Network attacks
+
+-DDoS
+
+~Amplified:
+
+~Reflected:
+
+-DNS:
+
+-Wireless:
+
+-On-path:
+
+-Credential replay:
+
+-Malicious code:
+
++Application attacks
+
+-Injection:
+
+-Buffer overflow:
+
+-Replay:
+
+-Privilege escalation:
+
+-Forgery:
+
+-Directory traversal:
+
++Cryptographic attacks
+
+-Downgrade:
+
+-Collision:
+
+-Birthday:
+
++Password attacks
+
+-Spraying:
+
+-Brute force:
+
++Indicators
+
+-Account lockout:
+
+-Concurrent session usage:
+
+-Blocked content:
+
+-Impossible travel:
+
+-Resource consumption:
+
+-Resource inaccessibility:
+
+-Out-of-cycle logging:
+
+-Published/documented:
+
+-Missing logs:
+
+2.5 EXPLAIN THE PURPOSE OF MITIGATION TECHNIQUES USED TO SECURE THE ENTERPRISE
+
++Segmentation
+
++Access control
+
+-ACL:
+
+-Permissions:
+
++Application allow list
+
++Isolation
+
++Patching
+
++Encryption
+
++Monitoring
+
++Least privilege
+
++Configuration enforcement
+
++Decommissioning
+
++Hardening techniques
+
+-Encryption
+
+-Installation of endpoint protection
+
+-Host-based firewall
+
+-Host-based IPS
+
+-Disabling ports/protocols
+
+-Default password changes
+
+-Removal of unnecessary software
+
+
+3.0 SECURITY ARCHITECTURE
+
+3.1 COMPARE AND CONTRAST SECURITY IMPLICATIONS OF DIFFERENT ARCHITECTURE MODELS
+
++Architecture and infrastructure concepts
+
+-Cloud
+
+~Responsibility matrix:
+
+~Hybrid considerations:
+
+~Third-party vendors:
+
+-IaC:
+
+-Serverless:
+
+-Microservices:
+
+-Network infrastructure
+
+~Physical isolation
+
+=Air-gapped:
+
+~Logical segmentation:
+
+~SDN
+
+-On-premises:
+
+-Centralized vs decentralized
+
+-Containerization
+
+-Virtualization
+
+-IoT
+
+-ICS/SCADA
+
+-Real-time operating system (RTOS):
+
+-Embedded systems:
+
+-High availability:
+
++Considerations
+
+-Availability:
+
+-Resilience:
+
+-Cost:
+
+-Responsiveness:
+
+-Scalability:
+
+-Ease of deployment:
+
+-Scalability:
+
+-Ease of deployment:
+
+-Risk transference:
+
+-Ease of recovery:
+
+-Patch availability:
+
+-Inability to patch:
+
+-Power:
+
+-Compute:
+
+3.2 GIVEN A SCENARIO, APPLY SECURITY PRINCIPLES TO SECURE ENTERPRISE INFRASTRUCTURE
+

@@ -1,0 +1,1 @@
+Includes the official Security+ exam objectives PDF. I also have my text file in which I define these terms and concepts. I have skipped over the ones I am already familiar with, or if they are so obvious as to not need a definition or explanation.

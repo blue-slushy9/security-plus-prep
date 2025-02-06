@@ -1,0 +1,103 @@
+
+CompTIA Security+ (SY0-701) Practice Questions
+
+Question 1
+A business development team reports that files are missing from the database system and the server log-in screens are showing a lock symbol that requires users to contact an email address to access the system and data. Which of the following attacks is the company facing?
+
+A. Rootkit
+B. Ransomware
+C. Spyware
+D. Bloatware
+
+Question 2
+During a security incident, the security operations team identified sustained network traffic from a malicious IP address: 10.1.4.9. A security analyst is creating an inbound firewall rule to block the IP address from accessing the organization's network. Which of the following fulfills this request?
+
+A. access-list inbound deny ip source 0.0.0.0/0 destination 10.1.4.9/32
+B. access-list inbound deny ip source 10.1.4.9/32 destination 0.0.0.0/0
+C. access-list inbound permit ip source 10.1.4.9/32 destination 0.0.0.0/0
+D. access-list inbound permit ip source 0.0.0.0/0 destination 10.1.4.9/32
+
+Question 3
+Which of the following threat actors is the most likely to use common hacking tools found on the internet to attempt to remotely compromise an organization's web server?
+
+A. Organized crime
+B. Insider threat
+C. Unskilled attacker
+D. Nation-state
+
+Question 4
+A systems administrator would like to set up a system that will make it difficult or impossible to deny that someone has performed an action. Which of the following is the administrator trying to accomplish?
+
+A. Non-repudiation
+B. Adaptive identity
+C. Security zones
+D. Deception and disruption
+
+Question 5
+Which of the following types of controls decreases the likelihood of a cybersecurity breach occurring?
+
+A. Corrective
+B. Transfer
+C. Detective
+D. Preventive
+
+Question 6
+A company is expanding its threat surface program and allowing individuals to security test the company's internet-facing application. The company will compensate researchers based on the vulnerabilities discovered. Which of the following best describes the program the company is setting up?
+
+A. Open-source intelligence
+B. Bug bounty
+C. Red team
+D. Penetration testing
+
+Question 7
+Which of the following is the final step of the incident response process?
+
+A. Containment
+B. Lessons learned
+C. Eradication
+D. Detection
+
+Question 8
+Which of the following provides the details about the terms of a test with a third-party penetration tester?
+
+A. Rules of engagement
+B. Supply chain analysis
+C. Right to audit clause
+D. Due diligence
+
+Question 9
+An organization is leveraging a VPN between its headquarters and a branch location. Which of the following is the VPN protecting?
+
+A. Data in use
+B. Data in transit
+C. Geographic restrictions
+D. Data sovereignty
+
+Question 10
+Which of the following would be the most helpful in restoring data in the event of a ransomware infection?
+
+A. Load balancing
+B. Geographic dispersion
+C. Encryption
+D. Backups
+Security+ (SY0-701) Answer Key
+
+Question 1) B. Ransomware
+
+Question 2) B. access-list inbound deny ip source 10.1.4.9/32 destination 0.0.0.0/0
+
+Question 3) C. Unskilled attacker
+
+Question 4) A. Non-repudiation
+
+Question 5) D. Preventive
+
+Question 6) B. Bug bounty
+
+Question 7) B. Lessons learned
+
+Question 8) A. Rules of engagement
+
+Question 9) B. Data in transit
+
+Question 10) D. Backups
